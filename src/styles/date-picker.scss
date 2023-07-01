@@ -1,0 +1,15 @@
+.datepicker {
+    display: inline-block;
+
+    &__day {
+        width: 56px;
+        margin-right: 4px;
+    }
+    &__month {
+        width: 91px;
+        margin-right: 3px;
+    }
+    &__year {
+        width: 68px;
+    }
+}
