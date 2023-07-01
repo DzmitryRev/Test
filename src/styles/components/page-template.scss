@@ -1,0 +1,47 @@
+.page-template {
+    display: flex;
+
+    &__sidebar {
+        position: relative;
+        overflow: hidden;
+        width: 137px;
+        height: 482px;
+        background-color: $blue;
+    }
+
+    &__title {
+        position: absolute;
+        right: -90px;
+        bottom: -38px;
+        transform: rotate(-90deg);
+        transform-origin: top left;
+        white-space: nowrap;
+        color: white;
+        font-family: "PT Sans", sans-serif;
+        font-size: 49px;
+        font-weight: 300;
+    }
+
+    &__content {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 664px) {
+    .page-template {
+        flex-direction: column;
+
+        &__sidebar {
+            height: 100px;
+            width: 100%;
+        }
+
+        &__title {
+            right: auto;
+            bottom: auto;
+            top: 10px;
+            left: 20px;
+            transform: rotate(0);
+        }
+    }
+}

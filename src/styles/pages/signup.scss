@@ -1,0 +1,22 @@
+.signup-page {
+    &__main {
+        padding-top: 60px;
+    }
+    &__content {
+        padding: 40px 22px 32px 21px;
+    }
+    &__title {
+        letter-spacing: -0.4px;
+        color: $black-light;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+    &__subtitle {
+        margin-bottom: 16px;
+        letter-spacing: -0.3px;
+        color: $black-light;
+
+        font-size: 14px;
+    }
+}

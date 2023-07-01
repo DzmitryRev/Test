@@ -1,0 +1,20 @@
+.radio {
+    display: flex;
+    padding-top: 5px;
+    &__container {
+        display: flex;
+        align-items: center;
+        &:first-of-type {
+            margin-right: 19px;
+        }
+    }
+
+    &__input {
+        margin-right: 5px;
+    }
+    &__label {
+        color: $black-light;
+
+        font-size: 14px;
+    }
+}

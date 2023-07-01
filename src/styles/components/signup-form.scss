@@ -1,0 +1,57 @@
+.signup-form {
+    &__fields-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 81px;
+        & > :nth-child(odd) {
+            margin-right: 14px;
+        }
+        & > * {
+            margin-bottom: 13px;
+        }
+    }
+    &__nationality {
+        width: 235px;
+        margin-bottom: 16px;
+    }
+    &__gender,
+    &__birth-date {
+        margin-bottom: 16px;
+    }
+    &__gender {
+        width: 235px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__have-account {
+        letter-spacing: -0.3px;
+
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 664px) {
+    .signup-form {
+        &__fields-container {
+            justify-content: center;
+            margin-bottom: 27px;
+        }
+    }
+}
+@media screen and (max-width: 527px) {
+    .signup-form {
+        &__fields-container {
+            & > :nth-child(odd) {
+                margin-right: 0;
+            }
+        }
+        &__footer {
+            flex-direction: column;
+            justify-content: end;
+        }
+    }
+}

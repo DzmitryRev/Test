@@ -2,8 +2,128 @@
 <html lang="en">
 	@@include("../components/head.html", { "title": "Sign In" })
 	<body>
-		@@include("../components/header.html")
-		<main>Signin</main>
-        <h3>Hello world</h3>
+		<main class="signup-page__main">
+			<div class="container">
+				<div class="page-template">
+					<aside class="page-template__sidebar signup-page__sidebar">
+						<h1 class="page-template__title">Sign up</h1>
+					</aside>
+					<section class="page-template__content signup-page__content">
+						<div class="signup-page__header">
+							<p class="signup-page__title">New user?</p>
+							<p class="signup-page__subtitle">
+								Use the form below to create your account.
+							</p>
+						</div>
+						<div class="signup-page__form-container">
+							<form class="signup-form" action="">
+								<div class="signup-form__fields-container">
+									<div class="text-input-container signup-form__firstname">
+										<label class="label" for="firstName" com>First Name</label>
+										<input
+											class="text-input"
+											type="text"
+											id="firstName"
+											name="firstName"
+											required
+										/>
+									</div>
+									<div class="text-input-container signup-form__lastname">
+										<label class="label" for="lastName" com>Last Name</label>
+										<input
+											class="text-input"
+											type="text"
+											id="lastName"
+											name="lastName"
+											required
+										/>
+									</div>
+									<div class="signup-form__nationality">
+										<label class="label" for="nationality">Nationality</label>
+										<div class="select">
+											<select id="nationality" name="nationality" required>
+												<option>American</option>
+												<option>Russian</option>
+											</select>
+										</div>
+									</div>
+									<div class="text-input-container signup-form__email">
+										<label class="label" for="email" com>E-mail</label>
+										<input
+											class="text-input"
+											type="email"
+											id="email"
+											name="email"
+											required
+										/>
+									</div>
+									<div class="signup-form__birth-date">
+										@@include("../components/date-picker.html")
+									</div>
+									<div class="radio-set signup-form__gender">
+										<p class="label">Gender</p>
+										<div class="radio">
+											<div class="radio__container">
+												<input
+													class="radio__input"
+													type="radio"
+													id="male"
+													name="gender"
+													value="Male"
+													checked
+												/>
+												<label class="radio__label" for="male">Male</label>
+											</div>
+											<div class="radio__container">
+												<input
+													class="radio__input"
+													type="radio"
+													id="female"
+													name="gender"
+													value="Female"
+													checked
+												/>
+												<label class="radio__label" for="female">Female</label>
+											</div>
+										</div>
+									</div>
+									<div class="text-input-container signup-form__password">
+										<label class="label" for="password" com>Password</label>
+										<input
+											class="text-input"
+											type="password"
+											id="password"
+											name="password"
+											required
+										/>
+									</div>
+									<div
+										class="text-input-container signup-form__confirm-password"
+									>
+										<label class="label" for="confirm-password" com
+											>Confirm Password</label
+										>
+										<input
+											class="text-input"
+											type="password"
+											id="confirm-password"
+											name="confirm-password"
+											required
+										/>
+									</div>
+								</div>
+								<div class="signup-form__footer">
+									<p class="signup-form__have-account">
+										Have an account?
+										<a class="link" href="/login"> Login </a>
+									</p>
+									<button class="button" type="submit">Complete Signup</button>
+								</div>
+							</form>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
 	</body>
 </html>

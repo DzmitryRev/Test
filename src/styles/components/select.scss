@@ -4,12 +4,13 @@
     & select {
         width: calc(100% + 8px);
         margin-left: -3px;
-        padding-top: 5px;
+        padding-top: 4px;
         padding-bottom: 5px;
         letter-spacing: 0.6px;
         color: $black-light;
         border: none;
         outline: rgba(255, 255, 255, 0);
+        background-color: transparent;
         font-size: 14px;
     }
 }
