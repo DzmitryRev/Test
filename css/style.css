@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+.button {
+    position: relative;
+    top: 3px;
+    padding: 7px 26px;
+    color: white;
+    background-color: rgb(90, 97, 237);
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 665px;
+    background-color: white;
+}
+
+.datepicker {
+    display: inline-block;
+}
+
+.datepicker__day {
+    width: 56px;
+    margin-right: 4px;
+}
+
+.datepicker__month {
+    width: 91px;
+    margin-right: 3px;
+}
+
+.datepicker__year {
+    width: 68px;
+}
+
+.label {
+    color: rgb(124, 124, 124);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.page-template {
+    display: flex;
+}
+
+.page-template__sidebar {
+    position: relative;
+    overflow: hidden;
+    width: 137px;
+    height: 482px;
+    background-color: rgb(90, 97, 237);
+}
+
+.page-template__title {
+    position: absolute;
+    right: -90px;
+    bottom: -38px;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    white-space: nowrap;
+    color: white;
+    font-family: "PT Sans", sans-serif;
+    font-size: 49px;
+    font-weight: 300;
+}
+
+.page-template__content {
+    flex: 1;
+}
+
+.radio {
+    display: flex;
+    padding-top: 5px;
+}
+
+.radio__container {
+    display: flex;
+    align-items: center;
+}
+
+.radio__container:first-of-type {
+    margin-right: 19px;
+}
+
+.radio__input {
+    margin-right: 5px;
+}
+
+.radio__label {
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+}
+
+.signup-form__fields-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 81px;
+}
+
+.signup-form__fields-container> :nth-child(odd) {
+    margin-right: 14px;
+}
+
+.signup-form__fields-container>* {
+    margin-bottom: 13px;
+}
+
+.signup-form__nationality {
+    width: 235px;
+    margin-bottom: 16px;
+}
+
+.signup-form__gender,
+.signup-form__birth-date {
+    margin-bottom: 16px;
+}
+
+.signup-form__gender {
+    width: 235px;
+}
+
+.signup-form__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup-form__have-account {
+    letter-spacing: -0.3px;
+    font-size: 13px;
+}
+
+.link {
+    color: rgb(90, 97, 237);
+}
+
+.select {
+    max-width: 235px;
+    border-bottom: 1px solid rgb(242, 242, 242);
+}
+
+.select select {
+    width: calc(100% + 8px);
+    margin-left: -3px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    letter-spacing: 0.6px;
+    color: rgb(17, 17, 17);
+    border: none;
+    outline: rgba(255, 255, 255, 0);
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.select option {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    scrollbar-width: 0;
+    -webkit-appearance: none;
+}
+
+.text-input-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+}
+
+.text-input {
+    width: 235px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    letter-spacing: 0.8px;
+    color: rgb(17, 17, 17);
+    border: none;
+    border-bottom: 1px solid rgb(242, 242, 242);
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.signup-page__main {
+    padding-top: 60px;
+}
+
+.signup-page__content {
+    padding: 40px 22px 32px 21px;
+}
+
+.signup-page__title {
+    letter-spacing: -0.4px;
+    color: rgb(17, 17, 17);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.signup-page__subtitle {
+    margin-bottom: 16px;
+    letter-spacing: -0.3px;
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: rgb(244, 245, 252);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    cursor: default;
+}
+
+button,
+input[type=radio],
+select {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 664px) {
+    .page-template {
+        flex-direction: column;
+    }
+
+    .page-template__sidebar {
+        height: 100px;
+        width: 100%;
+    }
+
+    .page-template__title {
+        right: auto;
+        bottom: auto;
+        top: 10px;
+        left: 20px;
+        transform: rotate(0);
+    }
+
+    .signup-form__fields-container {
+        justify-content: center;
+        margin-bottom: 27px;
+    }
+}
+
+@media screen and (max-width: 527px) {
+    .signup-form__fields-container> :nth-child(odd) {
+        margin-right: 0;
+    }
+
+    .signup-form__footer {
+        flex-direction: column;
+        justify-content: end;
+    }
+}
