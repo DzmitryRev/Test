@@ -1,0 +1,17 @@
+.text-input-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+}
+
+.text-input {
+    width: 235px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    color: $black-light;
+    border: none;
+    border-bottom: 1px solid $gray-light;
+    outline: none;
+    font-size: 14px;
+}
