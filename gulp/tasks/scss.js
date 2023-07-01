@@ -1,5 +1,5 @@
 import gulp from "gulp";
-import * as originalSass from "sass";
+import dartSass from "sass";
 import gulpSass from "gulp-sass";
 import groupCssMediaQueries from "gulp-group-css-media-queries";
 import webpcss from "gulp-webpcss";
@@ -10,7 +10,7 @@ import { paths } from "../config/paths.js";
 import { plugins } from "../config/plugins.js";
 import { isBuild } from "../config/mode.js";
 
-const sass = gulpSass(originalSass);
+const sass = gulpSass(dartSass);
 export const scss = () => {
 	return gulp
 		.src(paths.src.scss, { sourcemap: !isBuild })
